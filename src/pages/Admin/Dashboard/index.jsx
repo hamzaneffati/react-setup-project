@@ -1,6 +1,5 @@
 const DashboardAdmin = () => {
-	return <>Dashboard Admin
-</>;
+	return <>Dashboard Admin</>;
 };
 
-export default  DashboardAdmin;
+export default DashboardAdmin;

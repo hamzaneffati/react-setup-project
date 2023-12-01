@@ -4,13 +4,18 @@
 		"browser": true,
 		"es2021": true
 	},
-	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+	"extends": [
+		"react-app",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:prettier/recommended"
+	],
 	"parserOptions": {
+		"ecmaFeatures": { "jsx": true },
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
 	"plugins": ["react", "prettier", "simple-import-sort"],
-
 	"rules": {
 		"react/react-in-jsx-scope": "off",
 		"quotes": ["error", "single"],
@@ -22,5 +27,10 @@
 		"no-trailing-spaces": "error",
 		"simple-import-sort/imports": "error",
 		"simple-import-sort/exports": "error"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
 	}
 }

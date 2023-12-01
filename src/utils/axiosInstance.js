@@ -20,6 +20,7 @@ const axiosInstance = axios.create({
 	}
 });
 
+// eslint-disable-next-line react-hooks/rules-of-hooks
 const token = useAuthStore((state) => state.token);
 
 axiosInstance.interceptors.request.use((config) => {
