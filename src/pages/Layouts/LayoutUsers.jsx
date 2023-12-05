@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 
 import HeaderMenu from '../../components/Menu';
 
-const LayoutAdmin = () => {
+const LayoutUsers = () => {
 	return (
 		<>
 			<HeaderMenu />
@@ -11,4 +11,4 @@ const LayoutAdmin = () => {
 	);
 };
 
-export default LayoutAdmin;
+export default LayoutUsers;
